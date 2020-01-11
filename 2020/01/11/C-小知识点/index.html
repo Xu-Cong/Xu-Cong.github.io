@@ -126,11 +126,11 @@
 
         <div id="main" >
             <div class ="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >#pragma once</h2></a>
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >C++小知识点</h2></a>
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                <h1 id="pragma-once-和-ifndef-的区别"><a href="#pragma-once-和-ifndef-的区别" class="headerlink" title="pragma once 和 ifndef 的区别"></a>pragma once 和 ifndef 的区别</h1><p><em>两者没有太大区别，主要目的大致一样。</em><br><br/><br>ifndef主要依赖宏名字不冲突，保证了同一个文件不会被重复包含，还能保证内容相同的文件不会被重复包含。其缺点是，若两个文件的宏相同，其中一个不会被包含，编译器会找不到声明，所以取名时得注意。<br><br/><br>pragma once主要是编译器确保一个文件只包含一次，不用自己想宏名，但是如果有多个内容相同但名字不同的文件，仍会出现重复包含。<br><br/><br><em>其中ifndef的移植性较好，pragma once更方便</em></p>
+                <h1 id="C-小知识点"><a href="#C-小知识点" class="headerlink" title="C++小知识点"></a>C++小知识点</h1><p><em>#pragma once 和 #ifndef</em><br>两者没有太大区别，主要目的大致一样。<br>ifndef主要依赖宏名字不冲突，保证了同一个文件不会被重复包含，还能保证内容相同的文件不会被重复包含。其缺点是，若两个文件的宏相同，其中一个不会被包含，编译器会找不到声明，所以取名时得注意。<br>pragma once主要是编译器确保一个文件只包含一次，不用自己想宏名，但是如果有多个内容相同但名字不同的文件，仍会出现重复包含。<br>其中ifndef的移植性较好，pragma once更方便。<br><br/><br><em>class与struct</em><br>大致相同，区别在于class对于未定义访问修饰符默认为private，而struct默认为public。</p>
 
             </div>
 
@@ -193,8 +193,8 @@ $('.btn_click_load').click(function() {
 -->
 <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'http://yoursite.com/2020/01/11/pragma-once/';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://yoursite.com/2020/01/11/pragma-once/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'http://yoursite.com/2020/01/11/C-%E5%B0%8F%E7%9F%A5%E8%AF%86%E7%82%B9/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2020/01/11/C-%E5%B0%8F%E7%9F%A5%E8%AF%86%E7%82%B9/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 </script>
 
